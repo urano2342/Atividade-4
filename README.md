@@ -1,4 +1,8 @@
-# Atividade-4
+gerador-senhas/
+│
+├── README.md
+├── password_generator.py
+└── .gitignore
 # Gerador de Senhas Seguras
 
 ## Descrição
@@ -19,6 +23,19 @@ Este projeto implementa um gerador de senhas seguras e personalizáveis usando P
    ```bash
    git clone https://github.com/seu-usuario/gerador-senhas.git
    cd gerador-senhas
+python password_generator.py
+git checkout -b minha-feature
+git commit -m "Descrição do que foi alterado"
+
+---
+
+#### Arquivo `.gitignore`
+
+```gitignore
+# Ignore arquivos Python desnecessários
+__pycache__/
+*.pyc
+.env
 import random
 import string
 
@@ -54,4 +71,11 @@ if __name__ == "__main__":
         print(f"\nSua senha gerada é: {senha}")
     except ValueError:
         print("\nErro: Por favor, insira valores válidos.")
-
+git init
+git add .
+git commit -m "Configuração inicial do projeto"
+git checkout -b nova-feature
+git add password_generator.py
+git commit -m "Implementa funcionalidade de geração de senhas"
+git checkout main
+git merge nova-feature
